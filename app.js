@@ -18,4 +18,8 @@ buttonSelect.addEventListener("click", () => {
   createButton.textContent = "Delete";
   ulSelect.appendChild(createList);
   inputSelect.value = "";
+
+  createButton.addEventListener("click", () => {
+    createList.remove();
+  });
 });
