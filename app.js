@@ -12,12 +12,4 @@ const text = document.createTextNode(" - the GOAT.");
 const linkParagraph = document.querySelector("p");
 linkParagraph.appendChild(text);
 
-// section.appendChild(linkParagraph);
-// section.removeChild(linkParagraph);
-// linkParagraph.remove();
-
-paragraph.style.color = "white";
-paragraph.style.backgroundColor = "black";
-paragraph.style.padding = "10px";
-paragraph.style.width = "250px";
-paragraph.style.textAlign = "center";
+paragraph.setAttribute("class", "highlight");
