@@ -21,5 +21,8 @@ buttonSelect.addEventListener("click", () => {
 
   createButton.addEventListener("click", () => {
     createList.remove();
+    inputSelect.focus();
   });
+
+  inputSelect.focus();
 });
