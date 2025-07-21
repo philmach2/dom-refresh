@@ -1,31 +1,17 @@
-// named function
-function alertFunction() {
-  alert("Yay! You did it!");
-}
-const btn = document.querySelector("#btn");
+const link = document.querySelector("a");
+link.textContent = "Mozilla Developer Network";
 
-// callback of alert function
-btn.addEventListener("click", alertFunction);
+const section = document.querySelector("section");
+const paragraph = document.createElement("p");
+paragraph.textContent = "We hope you enjoyed the ride.";
 
-// returning event object
-btn.addEventListener("click", function (e) {
-  console.log(e);
-});
+section.appendChild(paragraph);
 
-btn.addEventListener("click", function (e) {
-  console.log(e.target);
-});
+const text = document.createTextNode(" - the GOAT.");
 
-btn.addEventListener("click", function (e) {
-  e.target.style.background = "orange";
-});
+const linkParagraph = document.querySelector("p");
+linkParagraph.appendChild(text);
 
-// buttons node list, similar to array
-const buttons = document.querySelectorAll("button");
-
-// add event listener to each item in node list
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    console.log(button.id);
-  });
-});
+// section.appendChild(linkParagraph);
+// section.removeChild(linkParagraph);
+linkParagraph.remove();
